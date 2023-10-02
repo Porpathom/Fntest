@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Details Department
+{% endblock title %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">ชื่อ</th>
+            <th scope="col">นามสกุล</th>
+            <th scope="col">เพศ</th>
+            <th scope="col">อายุ</th>
+            <th scope="col">ระดับการศึกษา</th>
+            <th scope="col">แผนกการศึกษา</th>
+        </tr>
+        {% for emps in emp %}
+        <tr>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td>{{ emps.first_name }}</td>
+            <td>{{ emps.last_name }}</td>
+            <td>{{ emps.sex_str }}</td>
+            <td>{{ emps.age }}</td>
+            <td>{{ emps.edu_str }}</td>
+            <td>{{ emps.dep }}</td>
+        </tr>
+        {% endfor %}
+{% endblock content %}

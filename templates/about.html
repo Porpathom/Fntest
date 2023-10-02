@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About Page
+{% endblock title %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Company</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #B0C4DE;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container .cta-button {
+            background-color: #696969;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;}
+
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Our Company</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to Our Company</h2>
+        <p> “If you can dream it, you can achieve it." - Zig Ziglar</p>
+        <p>บริษัทของเรามุ่งมั่นที่จะนำเสนอผลิตภัณฑ์/บริการคุณภาพสูง และให้บริการลูกค้ามาหลายปี</p>
+        <h3>Our Mission</h3>
+        <p>เรามุ่งมั่นที่จะมอบความเป็นเลิศและนวัตกรรมในทุกสิ่งที่เราทำ ภารกิจของเราคือการสร้างผลกระทบเชิงบวกต่อลูกค้าและโลก</p>
+        <h3>Contact Us</h3>
+        <p>หากคุณมีคำถามหรือต้องการติดต่อ กรุณาส่งอีเมลถึงเราได้ที่ <a href="mailto:stu6512732104@sskru.ac.th" class="cta-button">Contact Us</a>
+    </div>
+</body>
+</html>
+{% endblock content %}

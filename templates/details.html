@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Details Page
+{% endblock title %}
+
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <td scope="col">ชื่อ</td>
+        <td>{{ emp.first_name }}</td>
+      </tr>
+      <tr>
+        <td scope="col">นามสกุล</td>
+        <td>{{ emp.last_name }}</td>
+      </tr>
+      <tr>
+        <td scope="col">เพศ</td>
+        <td>{{ emp.sex_str }}</td>
+      </tr>
+      <tr>
+        <td scope="col">อายุ</td>
+        <td>{{ emp.age }}</td>
+      </tr>
+      <tr>
+        <td scope="col">ระดับการศึกษา</td>
+        <td>{{ emp.edu_str }}</td>
+      </tr>
+      <tr>
+        <td scope="col">แผนกงานที่สังกัด</td>
+        <td>{{ emp.dep }}</td>
+      </tr>
+
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+{% endblock content %}
